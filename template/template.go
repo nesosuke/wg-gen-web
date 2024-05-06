@@ -226,6 +226,7 @@ PrivateKey = {{ .Server.PrivateKey }}
 {{ if ne .Server.Mtu 0 -}}
 MTU = {{.Server.Mtu}}
 {{- end}}
+Table = off
 PreUp = {{ .Server.PreUp }}
 PostUp = {{ .Server.PostUp }}
 PreDown = {{ .Server.PreDown }}
